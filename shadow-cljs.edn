@@ -3,7 +3,7 @@
  ["src"]
 
  :dependencies
- [[zprint "0.4.6"]]
+ [[zprint "1.2.4"]]
 
  :builds
  {:script {:target :node-script

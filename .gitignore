@@ -4,3 +4,6 @@
 node_modules
 .DS_Store
 *.iml
+.shadow-cljs
+.clj-kondo/.cache
+.lsp

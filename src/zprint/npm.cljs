@@ -1,6 +1,7 @@
 (ns zprint.npm
   (:require [cljs.reader :refer [read-string]]
             [zprint.core :as zp]
+            [zprint.config :refer [help-str]]
             ["fs" :as fs]
             ["os" :as os]))
 
@@ -38,6 +39,9 @@
   [options]
   (set-zprintrc!)
   (when (seq options)
+    (when (.includes (str options) "--help")
+      (println help-str)
+      (js/process.exit 0))
     (try
       (zp/set-options! (read-string options))
       (catch :default e

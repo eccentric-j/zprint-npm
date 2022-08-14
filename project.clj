@@ -2,9 +2,9 @@
 ;;; it is not required for shadow-cljs
 (defproject zprint-npm "0.1.0"
   :dependencies
-  [[org.clojure/clojure "1.9.0"]
-   [thheller/shadow-cljs "2.0.132"]
-   [zprint "0.4.6"]]
+  [[org.clojure/clojure "1.11.0"]
+   [thheller/shadow-cljs "2.19.9"]
+   [zprint "1.2.4"]]
 
   :source-paths
   ["src"])

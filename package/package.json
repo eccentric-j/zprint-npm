@@ -1,10 +1,10 @@
 {
-  "name": "not-the-official-zprint",
+  "name": "zprint-wrapper",
   "version": "1.0.1",
   "description": "",
   "main": "main.js",
   "bin":{
-    "not-the-official-zprint":"./main.js"
+    "zprint":"./main.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
