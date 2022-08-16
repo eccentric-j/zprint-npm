@@ -1,9 +1,9 @@
 {
-  "devDependencies": {
-    "shadow-cljs": "^2.19.9"
-  },
-  "scripts": {
-    "build": "yarn shadow-cljs release script",
-    "dev": "yarn shadow-cljs watch script"
-  }
+	"devDependencies": {
+		"shadow-cljs": "^2.19.9"
+	},
+	"scripts": {
+		"build": "yarn shadow-cljs release script lib",
+		"dev": "yarn shadow-cljs watch script lib"
+	}
 }

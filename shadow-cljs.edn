@@ -7,7 +7,16 @@
 
  :builds
  {:script {:target :node-script
-           :output-to "package/main.js"
+           :output-to "packages/zprint-wrapper/main.js"
            :main zprint.npm/main
            :compiler-options {:infer-externs :auto
-                              :optimizations :advanced}}}}
+                              :optimizations :advanced}}
+  :lib {:target :node-library
+        :output-to "packages/zprint-lib/lib.js"
+        :exports {:configureAll   zprint.core/configure-all!
+                  :czprint        zprint.core/czprint
+                  :czprintStr     zprint.core/czprint-str
+                  :setOptions     zprint.core/set-options!
+                  :zprint         zprint.core/zprint
+                  :zprintFileStr  zprint.core/zprint-file-str
+                  :zprintStr      zprint.core/zprint-str}}}}

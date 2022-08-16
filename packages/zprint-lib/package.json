@@ -1,0 +1,11 @@
+{
+	"name": "zprint-lib",
+	"version": "1.0.0",
+	"description": "The clojure zprint library apis compiled to js to use in modules and scripts",
+	"main": "lib.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC"
+}
